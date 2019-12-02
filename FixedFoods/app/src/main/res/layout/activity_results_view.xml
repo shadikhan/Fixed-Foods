@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ScanningInterface">
+    tools:context=".ResultsView">
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/resultsText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="SCAN NOW"
+        android:text="RESULTS"
         android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -33,4 +33,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/previous" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

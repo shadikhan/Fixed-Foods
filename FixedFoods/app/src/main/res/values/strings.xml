@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">FixedFoods</string>
+    <string-array name="past_scans">
+        <item>ChipsAhoyChunkyPeanutButter</item>
+        <item>Applesauce</item>
+        <item>McRib</item>
+    </string-array>
 </resources>
