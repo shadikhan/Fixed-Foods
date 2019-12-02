@@ -1,4 +1,4 @@
-package com.anniefang.fixedfoods;
+package com.cmsc434.fixedfoods;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,7 +10,6 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 public class PastScans extends AppCompatActivity {
 

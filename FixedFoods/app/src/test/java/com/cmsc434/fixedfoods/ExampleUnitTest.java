@@ -1,4 +1,4 @@
-package com.anniefang.fixedfoods;
+package com.cmsc434.fixedfoods;
 
 import org.junit.Test;
 
