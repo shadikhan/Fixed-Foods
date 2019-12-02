@@ -37,7 +37,7 @@
     <LinearLayout
         android:layout_width="409dp"
         android:layout_height="670dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="80dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -47,7 +47,8 @@
         <ListView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/preferences"/>
+            android:id="@+id/preferences"
+            android:layout_margin="20dp"/>
 
 
     </LinearLayout>
