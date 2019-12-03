@@ -5,4 +5,12 @@
         <item>Applesauce</item>
         <item>McRib</item>
     </string-array>
+
+    <string-array name="users">
+        <item>"Annie Fang"</item>
+        <item>"Leah Kelley"</item>
+        <item>"Shad Khan"</item>
+        <item>"Jack Holly"</item>
+        <item>"Yasir Mohamood"</item>
+    </string-array>
 </resources>

@@ -5,15 +5,18 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
 import android.widget.ImageButton;
 import android.widget.ListView;
+import android.widget.Spinner;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class PreferencesPage extends AppCompatActivity {
+public class PreferencesPage extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
 
     private ListView lv;
     private ListView presets_lv;
@@ -46,6 +49,13 @@ public class PreferencesPage extends AppCompatActivity {
                 startActivityForResult(intent, 0);
             }
         });
+
+        Spinner spinner = findViewById(R.id.change_user);
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.users, R.layout.spinner_layout);
+        adapter.setDropDownViewResource(R.layout.spinner_dropdown_layout);
+
+        spinner.setAdapter(adapter);
+        spinner.setOnItemSelectedListener(this);
     }
 
     public void goToHomePage(View view) {
@@ -68,5 +78,16 @@ public class PreferencesPage extends AppCompatActivity {
             presets_list.addAll(data_list);
             ((BaseAdapter) presets_lv.getAdapter()).notifyDataSetChanged();
         }
+    }
+
+    @Override
+    public void onItemSelected (AdapterView<?> parent, View view, int position, long id) {
+        String text = parent.getItemAtPosition(position).toString();
+        Toast.makeText(parent.getContext(), text, Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> arg0) {
+
     }
 }
