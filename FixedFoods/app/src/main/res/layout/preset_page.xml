@@ -5,8 +5,22 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent" >
 
+<!--    <ImageButton-->
+<!--        android:id="@+id/preset_back"-->
+<!--        android:layout_width="47dp"-->
+<!--        android:layout_height="47dp"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginLeft="16dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.023"-->
+<!--        app:srcCompat="@drawable/back_button"-->
+<!--        android:onClick="Save"/>-->
+
     <ImageButton
-        android:id="@+id/backbutton6"
+        android:id="@+id/preset_back"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginStart="16dp"
@@ -14,7 +28,7 @@
         android:layout_marginTop="24dp"
         android:adjustViewBounds="true"
         android:background="@null"
-        android:onClick="goToHomePage"
+        android:onClick="Save"
         android:scaleType="fitCenter"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -25,6 +39,5 @@
         android:id="@+id/presets"
         android:layout_width="match_parent"
         android:layout_margin="20dp">
-
     </ListView>
 </LinearLayout>
