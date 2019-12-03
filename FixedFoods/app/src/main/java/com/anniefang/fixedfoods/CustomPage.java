@@ -25,7 +25,7 @@ public class CustomPage  extends AppCompatActivity {
         setContentView(R.layout.custom_page);
 
 
-        String s[] = new String[]{"Apple", "Bananas", "Avocados", "Nuts", "Asparagus", "Broccoli", "Strawberries", "Grapes"};
+        String s[] = new String[]{"Apple", "Avocado", "Banana", "Cashews", "Carrots", "Chocolate", "Coconuts", "Grapes", "Nuts", "Peanuts", "Pork", "Shrimp", "Strawberries"};
         lv = findViewById(R.id.customs);
         lv.setAdapter(new ArrayAdapter<>(this,android.R.layout.simple_list_item_multiple_choice,s));
         lv.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);

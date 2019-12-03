@@ -23,8 +23,7 @@ public class PresetPage  extends AppCompatActivity {
         setContentView(R.layout.preset_page);
 
 
-        String s[] = new String[]{"Alkaline Diet", "Dairy Free Diet", "Gluten Free Diet", "Detox Diet",
-                "Keto Diet", "High Protein Diet", "Juice Diet"};
+        String s[] = new String[]{"Alkaline", "Dairy Free", "Detox", "Gluten Free", "Glycemic", "High Protein", "Keto", "Low Cholesterol", "Vegan", "Vegetarian"};
         presets_lv = findViewById(R.id.presets);
         presets_lv.setAdapter(new ArrayAdapter<>(this,android.R.layout.simple_list_item_multiple_choice,s));
         presets_lv.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);
