@@ -11,6 +11,8 @@
         android:theme="@style/AppTheme">
         <activity android:name=".ResultsView"></activity>
         <activity android:name=".PreferencesPage" />
+        <activity android:name=".CustomPage" />
+        <activity android:name=".PresetPage" />
         <activity android:name=".PastScans" />
         <activity android:name=".ScanningInterface" />
         <activity android:name=".HomePage">
