@@ -16,6 +16,7 @@
         android:background="@drawable/preferencesbg"
         android:onClick="goToPreferences"
         android:text="PREFERENCES"
+        android:stateListAnimator="@null"
         android:textColor="#F8F8F8"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/button2"
@@ -34,6 +35,7 @@
         android:background="@drawable/pastscanbg"
         android:onClick="goToPastScans"
         android:text="PAST SCANS"
+        android:stateListAnimator="@null"
         android:textColor="#F8F8F8"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -51,6 +53,8 @@
         android:background="@drawable/scannowbg"
         android:onClick="goToScanningInterface"
         android:text="SCAN NOW"
+        android:stateListAnimator="@null"
+
         android:textColor="#F8F8F8"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/button3"
@@ -63,12 +67,10 @@
         android:id="@+id/imageView"
         android:layout_width="358dp"
         android:layout_height="286dp"
-        app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.621"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
         app:srcCompat="@drawable/fixed_food_logo" />
 
     <ImageView
@@ -76,12 +78,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/food_border" />
 
     <ImageView
