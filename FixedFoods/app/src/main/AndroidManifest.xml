@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.cmsc434.fixedfoods">
+    package="com.anniefang.fixedfoods">
 
     <application
         android:allowBackup="true"
@@ -9,11 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.cmsc434.com.cmsc434.fixedfoods.ResultsView"></activity>
-        <activity android:name="com.cmsc434.com.cmsc434.fixedfoods.PreferencesPage" />
-        <activity android:name="com.cmsc434.com.cmsc434.fixedfoods.PastScans" />
-        <activity android:name="com.cmsc434.com.cmsc434.fixedfoods.ScanningInterface" />
-        <activity android:name="com.cmsc434.com.cmsc434.fixedfoods.HomePage">
+        <activity android:name=".ResultsView"></activity>
+        <activity android:name=".PreferencesPage" />
+        <activity android:name=".PastScans" />
+        <activity android:name=".ScanningInterface" />
+        <activity android:name=".HomePage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

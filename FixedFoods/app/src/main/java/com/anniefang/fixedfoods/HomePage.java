@@ -1,4 +1,4 @@
-package com.cmsc434.fixedfoods;
+package com.anniefang.fixedfoods;
 
 import androidx.appcompat.app.AppCompatActivity;
 
