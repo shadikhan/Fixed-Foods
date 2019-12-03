@@ -20,9 +20,9 @@ import java.util.Set;
 public class CustomPage  extends AppCompatActivity {
 
     private ListView lv;
-    private SharedPreferences pref;
+    private SharedPreferences cust;
     private SharedPreferences.Editor editor;
-    private Set preferencesSet;
+    private Set customsSet;
 
 
     @Override
@@ -30,13 +30,13 @@ public class CustomPage  extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.custom_page);
 
-        pref = getSharedPreferences("CustomPrefs", Context.MODE_PRIVATE);
-        editor = pref.edit();
+        cust = getSharedPreferences("Custom", Context.MODE_PRIVATE);
+        editor = cust.edit();
 
-        preferencesSet = pref.getStringSet("pref", null);
+        customsSet = cust.getStringSet("cust", null);
 
-        if (preferencesSet == null)
-            preferencesSet = new HashSet();
+        if (customsSet == null)
+            customsSet = new HashSet();
 
 
         String s[] = new String[]{"Apple", "Avocado", "Banana", "Cashews", "Carrots", "Chocolate", "Coconuts", "Grapes", "Nuts", "Peanuts", "Pork", "Shrimp", "Strawberries"};
@@ -44,7 +44,7 @@ public class CustomPage  extends AppCompatActivity {
         lv.setAdapter(new ArrayAdapter<>(this,android.R.layout.simple_list_item_multiple_choice,s));
         lv.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);
 
-        loadPreferences(preferencesSet);
+        loadCustoms();
 
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -54,10 +54,10 @@ public class CustomPage  extends AppCompatActivity {
                 TextView tv = (TextView) lv.getChildAt(arg2);
 
                 if (lv.isItemChecked(arg2)) {
-                    // Add it to our shared preferencesSet
-                    preferencesSet.add(tv.getText().toString());
+                    // Add it to our shared customsSet
+                    customsSet.add(tv.getText().toString());
                 } else {
-                    preferencesSet.remove(tv.getText().toString());
+                    customsSet.remove(tv.getText().toString());
                 }
 
 //                ListView lv = (ListView) arg0;
@@ -69,14 +69,14 @@ public class CustomPage  extends AppCompatActivity {
 
     }
 
-    private void loadPreferences(Set preferencesSet) {
+    private void loadCustoms() {
 
         ArrayAdapter a = (ArrayAdapter) lv.getAdapter();
 
         for (int i = 0; i < a.getCount(); i++) {
             String s = (String) a.getItem(i);
 
-            if (preferencesSet.contains(s)){
+            if (customsSet.contains(s)){
                 lv.setItemChecked(i, true);
             }
         }
@@ -93,14 +93,15 @@ public class CustomPage  extends AppCompatActivity {
             }
         }
 
-        editor.putStringSet("pref", preferencesSet);
+        editor.putStringSet("cust", customsSet);
         editor.commit();
 
         // Go to home
         Intent intent = new Intent(getApplicationContext(), PreferencesPage.class);
-        intent.putExtra("data", list);
-        setResult(0, intent);
-        finish();
+        startActivity(intent);
+//        intent.putExtra("data", list);
+//        setResult(0, intent);
+//        finish();
     }
 
 }

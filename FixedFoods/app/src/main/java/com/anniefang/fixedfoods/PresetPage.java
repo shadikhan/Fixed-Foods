@@ -29,7 +29,7 @@ public class PresetPage  extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.preset_page);
 
-        pres = getSharedPreferences("CustomPresets", Context.MODE_PRIVATE);
+        pres = getSharedPreferences("Presets", Context.MODE_PRIVATE);
         editor = pres.edit();
 
         presetsSet = pres.getStringSet("pres", null);
@@ -96,9 +96,10 @@ public class PresetPage  extends AppCompatActivity {
 
         // Go to home
         Intent intent = new Intent(getApplicationContext(), PreferencesPage.class);
-        intent.putExtra("data", list);
-        setResult(1, intent);
-        finish();
+        startActivity(intent);
+//        intent.putExtra("data", list);
+//        setResult(1, intent);
+//        finish();
     }
 
 }
