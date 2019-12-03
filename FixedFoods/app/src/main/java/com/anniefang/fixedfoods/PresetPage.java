@@ -2,6 +2,7 @@ package com.anniefang.fixedfoods;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -43,10 +44,19 @@ public class PresetPage  extends AppCompatActivity {
 
     public void Save(View view) {
         // TODO: Save the selections?
-
+        SparseBooleanArray sp = presets_lv.getCheckedItemPositions();
+        ArrayList<String> list = new ArrayList<>();
+        for(int i=0;i<sp.size();i++){
+            if(sp.valueAt(i)==true){
+                String s = ((TextView) presets_lv.getChildAt(sp.keyAt(i))).getText().toString();
+                list.add(s);
+            }
+        }
         // Go to home
         Intent intent = new Intent(getApplicationContext(), PreferencesPage.class);
-        startActivity(intent);
+        intent.putExtra("data", list);
+        setResult(1, intent);
+        finish();
     }
 
 }
