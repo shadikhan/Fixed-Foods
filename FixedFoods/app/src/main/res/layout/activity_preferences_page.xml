@@ -138,8 +138,8 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="145dp"
-        android:layout_height="114dp"
+        android:layout_width="158dp"
+        android:layout_height="133dp"
         android:layout_marginTop="32dp"
         android:adjustViewBounds="true"
         android:scaleType="fitCenter"
@@ -156,8 +156,10 @@
         android:textAlignment="textEnd"
         app:layout_constraintBottom_toTopOf="@+id/textView11"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.0" />
 
     <!--        app:srcCompat="@android:drawable/ic_menu_search" />-->
 
