@@ -38,14 +38,15 @@
         android:id="@+id/customs"
         android:layout_width="match_parent"
         android:layout_height="649dp"
+        android:layout_below="@+id/custom_text"
         android:layout_alignParentBottom="true"
+        android:layout_marginTop="24dp"
         android:layout_marginBottom="2dp"></ListView>
 
     <TextView
         android:id="@+id/custom_text"
         android:layout_width="160dp"
         android:layout_height="30dp"
-        android:layout_above="@+id/customs"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
@@ -54,7 +55,6 @@
         android:layout_marginTop="26dp"
         android:layout_marginEnd="115dp"
         android:layout_marginRight="115dp"
-        android:layout_marginBottom="24dp"
         android:layout_toEndOf="@+id/custom_back"
         android:layout_toRightOf="@+id/custom_back"
         android:text="CUSTOM ITEMS"
