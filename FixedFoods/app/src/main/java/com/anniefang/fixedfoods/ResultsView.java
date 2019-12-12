@@ -11,7 +11,7 @@ public class ResultsView extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_results_view);
+        setContentView(R.layout.activity_results1_view);
     }
 
     public void goToHomePage(View view) {
