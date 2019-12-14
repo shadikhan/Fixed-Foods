@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#daedf4"
+    android:background="#93B3E4"
     tools:context=".PreferencesPage">
 
     <!--Back Button-->
@@ -38,6 +38,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
+
 
 
     <ListView
@@ -132,13 +133,11 @@
         app:layout_constraintEnd_toEndOf="@+id/textView12"
         app:layout_constraintTop_toTopOf="@+id/textView12" />
 
-    <!--Change User Dropdown/spinner-->
-
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="158dp"
-        android:layout_height="133dp"
-        android:layout_marginTop="32dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
         android:adjustViewBounds="true"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
@@ -146,6 +145,7 @@
         app:layout_constraintTop_toTopOf="@+id/textView2"
         app:srcCompat="@drawable/annie_profile_circle" />
 
+    <!--Change User Dropdown/spinner-->
     <Spinner
         android:id="@+id/change_user"
         android:layout_width="wrap_content"
@@ -156,5 +156,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textView2" />
+
+    <!--        app:srcCompat="@android:drawable/ic_menu_search" />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

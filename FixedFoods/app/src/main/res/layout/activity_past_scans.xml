@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".PastScans"
+    android:background="#93B3E4"
     android:orientation="vertical">
 
 
@@ -30,7 +31,7 @@
         android:layout_marginTop="24dp"
         android:text="PAST SCANS"
         android:textColor="#000000"
-        android:textSize="20sp"
+        android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
