@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#daedf4"
+    android:background="#93B3E4"
     tools:context=".PreferencesPage">
 
     <!--Back Button-->
@@ -40,7 +40,6 @@
         app:layout_constraintVertical_bias="0.0" />
 
 
-    <!-- Current User -->
 
     <ListView
         android:id="@+id/customs_list"
@@ -67,7 +66,7 @@
         android:gravity="left"
         android:paddingLeft="15dp"
         android:paddingTop="10dp"
-        android:text="Custom Items"
+        android:text="Things I'm avoiding..."
         android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -101,7 +100,7 @@
         android:gravity="left"
         android:paddingLeft="15dp"
         android:paddingTop="10dp"
-        android:text="Preset Diets"
+        android:text="Diets I'm following..."
         android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -134,13 +133,11 @@
         app:layout_constraintEnd_toEndOf="@+id/textView12"
         app:layout_constraintTop_toTopOf="@+id/textView12" />
 
-    <!--Change User Dropdown/spinner-->
-
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="158dp"
-        android:layout_height="133dp"
-        android:layout_marginTop="32dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
         android:adjustViewBounds="true"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
@@ -148,18 +145,17 @@
         app:layout_constraintTop_toTopOf="@+id/textView2"
         app:srcCompat="@drawable/annie_profile_circle" />
 
+    <!--Change User Dropdown/spinner-->
     <Spinner
         android:id="@+id/change_user"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
         android:gravity="end"
         android:textAlignment="textEnd"
-        app:layout_constraintBottom_toTopOf="@+id/textView11"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@id/textView2" />
 
     <!--        app:srcCompat="@android:drawable/ic_menu_search" />-->
 

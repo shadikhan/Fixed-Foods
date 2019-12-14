@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".PastScans"
+    android:background="#93B3E4"
     android:orientation="vertical">
+
 
     <ImageButton
         android:id="@+id/backbutton"
@@ -29,7 +31,7 @@
         android:layout_marginTop="24dp"
         android:text="PAST SCANS"
         android:textColor="#000000"
-        android:textSize="20sp"
+        android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -45,12 +47,44 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textView">
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/search_bar"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="Search..."
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="55dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"
+                app:srcCompat="@drawable/search_icon" />
+        </RelativeLayout>
+
         <ListView
             android:id="@+id/past_scans_list"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:padding="5dp" />
+            android:padding="5dp" >
+
+        </ListView>
 
     </LinearLayout>
 
