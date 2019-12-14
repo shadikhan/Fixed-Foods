@@ -52,17 +52,17 @@
             android:layout_height="70dp"
             android:paddingLeft="10dp">
 
-            <TextView
-                android:id="@+id/textView7"
+            <EditText
+                android:id="@+id/searchFilter"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/search_bar"
+                android:hint="Search a menu item!"
                 android:paddingLeft="20dp"
                 android:paddingTop="10dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:text="Search..."
                 android:textSize="18sp" />
 
             <ImageView
