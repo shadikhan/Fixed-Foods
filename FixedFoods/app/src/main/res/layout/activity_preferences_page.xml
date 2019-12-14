@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#93B3E4"
+    android:background="#daedf4"
     tools:context=".PreferencesPage">
 
     <!--Back Button-->

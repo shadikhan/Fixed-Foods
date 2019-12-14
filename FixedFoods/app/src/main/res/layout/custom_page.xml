@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent" >
+    android:layout_height="fill_parent"
+    android:background="#daedf4">
 
 <!--    <ImageButton-->
 <!--        android:id="@+id/custom_back"-->
@@ -45,16 +46,16 @@
 
     <TextView
         android:id="@+id/custom_text"
-        android:layout_width="160dp"
+        android:layout_width="wrap_content"
         android:layout_height="30dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_marginStart="90dp"
-        android:layout_marginLeft="90dp"
+        android:layout_marginLeft="60dp"
         android:layout_marginTop="26dp"
         android:layout_marginEnd="115dp"
-        android:layout_marginRight="115dp"
+        android:layout_marginRight="80dp"
         android:layout_toEndOf="@+id/custom_back"
         android:layout_toRightOf="@+id/custom_back"
         android:text="CUSTOM ITEMS"

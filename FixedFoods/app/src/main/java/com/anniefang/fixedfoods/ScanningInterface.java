@@ -12,12 +12,10 @@ public class ScanningInterface extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scanning_interface);
-
-
     }
 
     public void goToResultsPage(View view){
-        Intent intent = new Intent(getApplicationContext(), ResultsView.class);
+        Intent intent = new Intent(getApplicationContext(), ScanNowItemView.class);
         startActivity(intent);
     }
 

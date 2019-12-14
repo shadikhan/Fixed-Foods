@@ -9,11 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ResultsView"></activity>
+        <activity android:name=".ScanNowItemView"></activity>
+        <activity android:name=".RestaurantItemView" />
         <activity android:name=".PreferencesPage" />
         <activity android:name=".CustomPage" />
         <activity android:name=".PresetPage" />
-        <activity android:name=".PastScans" />
+        <activity android:name=".SearchNow" />
         <activity android:name=".ScanningInterface" />
         <activity android:name=".HomePage">
             <intent-filter>

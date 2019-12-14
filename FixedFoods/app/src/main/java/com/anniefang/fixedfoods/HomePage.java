@@ -25,7 +25,7 @@ public class HomePage extends AppCompatActivity {
     }
 
     public void goToPastScans(View view) {
-        Intent intent = new Intent(getApplicationContext(), PastScans.class);
+        Intent intent = new Intent(getApplicationContext(), SearchNow.class);
         startActivity(intent);
     }
 }
